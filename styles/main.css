@@ -262,11 +262,11 @@ border: none;
     width: 270px;
    
    }
-   .menu-text{
-    display: flex;
-   }
+.menu-text{
+display: flex;
+}
   
-   .text-skills {
+.text-skills {
 font-weight: 700;
 color: var(--primary-gray-color);
 font-size: 14px;
@@ -588,15 +588,15 @@ margin-bottom: 20px;}
          /*---FOOTER---*/
          /*---Модальневікно---*/
 .dackdrop{
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    width: 100%;
-    height: 100%;
-    background: rgba(47, 48, 58, 0.4);
-    opacity: 1;
-    transition: opacity 500ms ease, visibility 500ms ease;
+position: fixed;
+top: 0;
+left: 0;
+z-index: 100;
+width: 100%;
+height: 100%;
+background: rgba(47, 48, 58, 0.4);
+opacity: 1;
+transition: opacity 500ms ease, visibility 500ms ease;
 }
 .dackdrop.is-hidden{
 opacity: 0;
@@ -604,17 +604,17 @@ visibility: hidden;
 pointer-events: none;
     }
 .modal{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 528px;
-    height: 581px;
-    background-color: var(--primary-whyte-color);
-    padding: 40px;
-    background-color: var(--primary-whyte-color);
-    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
-    border-radius: 4px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+width: 528px;
+height: 581px;
+background-color: var(--primary-whyte-color);
+padding: 40px;
+background-color: var(--primary-whyte-color);
+box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
+border-radius: 4px;
 }
 .modal-close-btn{
 cursor: pointer;
@@ -667,7 +667,9 @@ padding: 0;
     border-radius: 4px;
     transition: border-color var(--transition-dur-and-func);
     }
-    
+    .input-form :focus{
+        border-color: var(--accent-color);  
+    }
     
     .form-icon {
         position: absolute;
@@ -676,6 +678,9 @@ padding: 0;
         transform: translateY(-50%);
         transition: fill var(--transition-dur-and-func);}
 
+ .form-wrapper  :focus + svg {
+    fill: var(--accent-color);
+}
         .label-form {
             margin-bottom: 10px;}
  .form-subtitle {
@@ -688,10 +693,7 @@ letter-spacing: 0.01em;}
 .form-wrapper {
     position: relative;
     display: block;}
-    .form-wrapper :hover{
-        border-color: var(--accent-color);
-        fill: var(--accent-color);
-    }
+    
     .label-form-coment {
         margin-bottom: 25px;
     }
