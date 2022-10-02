@@ -746,9 +746,20 @@ border: 2px solid var(--primary-gray-color);
 border-radius: 2px;
 fill: var(--primary-whyte-color);
 }
+.input-checkbox{
+    position: absolute;
+    appearance: none;
+}
 .icon-form-checked-on {
 display: none;
 }
+.input-checkbox:checked + .icon-form-checked{
+    background-color: var(--accent-color);
+}
+.input-checkbox:checked + .icon-form-checked .icon-form-checked-on{
+    display: block;
+}
+
 .form-link {
 text-decoration: revert;
 font-size: 14px;
