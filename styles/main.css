@@ -636,136 +636,144 @@ padding: 0;
     fill: var(--accent-color);
 }
 .form-modal-window {
-    display: flex;
-    flex-direction: column;
+display: flex;
+flex-direction: column;
 }
 .form-title {
-    margin-bottom: 12px;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--primary-gray-color);
+margin-bottom: 12px;
+font-weight: 700;
+font-size: 20px;
+line-height: 1.15;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--primary-gray-color);
 }
 .label-form {
-    margin-bottom: 10px;
+margin-bottom: 10px;
 }
 .form-subtitle {
-    display: block;
-    margin-bottom: 4px;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
+display: block;
+margin-bottom: 4px;
+font-size: 12px;
+line-height: 1.16;
+letter-spacing: 0.01em;
 }
 .input-form {
-    cursor: pointer;
-    padding-left: 42px;
-    width: 100%;
-    height: 40px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    transition: border-color var(--transition-dur-and-func);
-    }
-    .input-form :focus{
-        border-color: var(--accent-color);  
-    }
-    
-    .form-icon {
-        position: absolute;
-        left: 12px;
-        top: 50%;
-        transform: translateY(-50%);
-        transition: fill var(--transition-dur-and-func);}
-
- .form-wrapper  :focus + svg {
-    fill: var(--accent-color);
+outline: none;
+cursor: pointer;
+padding-left: 42px;
+width: 100%;
+height: 40px;
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+transition: border-color var(--transition-dur-and-func);
 }
-        .label-form {
-            margin-bottom: 10px;}
- .form-subtitle {
+.input-form :focus{
+border-color: var(--accent-color);  
+}
+    
+    
+.form-icon {
+position: absolute;
+left: 12px;
+top: 50%;
+transform: translateY(-50%);
+transition: fill var(--transition-dur-and-func);}
+.form-wrapper input:focus{
+fill: var(--accent-color);
+} 
+.form-wrapper :focus + svg {
+fill: var(--accent-color);
+}
+.label-form {
+margin-bottom: 10px;}
+.form-subtitle {
 display: block;
 margin-bottom: 4px;
 font-size: 12px;
 line-height: 1.16;
 letter-spacing: 0.01em;}
-
 .form-wrapper {
-    position: relative;
-    display: block;}
-    
-    .label-form-coment {
-        margin-bottom: 25px;
-    }
-    .form-subtitle {
-        display: block;
-        margin-bottom: 4px;
-        font-size: 12px;
-        line-height: 1.16;
-        letter-spacing: 0.01em;
-    }
-    .comment {
-        display: block;
-        padding: 16px 12px 16px 12px;
-        width: 100%;
-        height: 120px;
-        border: 1px solid rgba(33, 33, 33, 0.2);
-        border-radius: 4px;
-        resize: none;
-        transition: border-color var(--transition-dur-and-func);
-    }
-    .lable-checkbox {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 30px;
-    }
-    .lable-checkbox {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 30px;
-    }
-    .icon-form-checked {
-        margin-right: 8px;
-        width: 16px;
-        height: 15px;
-        border: 2px solid #212121;
-        border-radius: 2px;
-    }
-    .icon-form-checked-on {
-        display: none;
-    }
-    .form-link {
-        text-decoration: revert;
-        font-size: 14px;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
-        color: var(--accent-color);
-        transition: text-decoration var(--transition-dur-and-func);
-    }
-    .btn-send-form {
-        display: flex;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 52px;
-        padding-right: 52px;
-        width: 200px;
-        color: var(--primary-whyte-color);
-        background-color: var(--accent-color);
-        font-family: "Roboto", sans-serif;;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.87;
-        margin-left: auto;
-        margin-right: auto;
-        align-items: center;
-        justify-content: center;
-        letter-spacing: 0.06em;
-        cursor: pointer;
-        border: 0px;
-        border-radius: 4px;
-        transition: background-color var(--transition-dur-and-func), 
-        box-shadow var(--transition-dur-and-func), 
-        border-radius var(--transition-dur-and-func);
+position: relative;
+display: block;}
+.form-wrapper:focus{
+outline: none;
+border-color: var(--accent-color);
+}   
+.label-form-coment {
+margin-bottom: 25px;
+}
+.form-subtitle {
+display: block;
+margin-bottom: 4px;
+font-size: 12px;
+line-height: 1.16;
+letter-spacing: 0.01em;
+}
+.comment {
+display: block;
+padding: 16px 12px 16px 12px;
+width: 100%;
+height: 120px;
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+resize: none;
+transition: border-color var(--transition-dur-and-func);
+}
+.lable-checkbox {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 30px;
+}
+.lable-checkbox {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 30px;
+}
+.icon-form-checked {
+cursor: pointer;
+width: 16px;
+height: 15px;
+margin-right: 8px;
+border: 2px solid var(--primary-gray-color);
+border-radius: 2px;
+fill: var(--primary-whyte-color);
+}
+.icon-form-checked-on {
+display: none;
+}
+.form-link {
+text-decoration: revert;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: var(--accent-color);
+transition: text-decoration var(--transition-dur-and-func);
+}
+.btn-send-form {
+display: flex;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 52px;
+padding-right: 52px;
+width: 200px;
+color: var(--primary-whyte-color);
+background-color: var(--accent-color);
+font-family: "Roboto", sans-serif;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.87;
+margin-left: auto;
+margin-right: auto;
+align-items: center;
+justify-content: center;
+letter-spacing: 0.06em;
+cursor: pointer;
+border: 0px;
+border-radius: 4px;
+transition: background-color var(--transition-dur-and-func), 
+box-shadow var(--transition-dur-and-func), 
+border-radius var(--transition-dur-and-func);
     }
