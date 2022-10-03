@@ -392,6 +392,11 @@ margin-bottom: 20px;}
         font-size: 16px;
         line-height: 1.25;
     }
+    .subscription-mail:hover{
+        border-color: var(--accent-color);
+        outline: none;
+        color: var(--primary-whyte-color);
+        }
     .subscription-btn {
         display: inline-flex;
         width: 200px;
