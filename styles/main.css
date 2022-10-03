@@ -566,6 +566,11 @@ margin-bottom: 20px;}
         font-size: 16px;
         line-height: 1.25;
     }
+    .subscription-mail:hover{
+    border-color: var(--accent-color);
+    outline: none;
+    color: var(--primary-whyte-color);
+    }
     .subscription-btn {
         display: inline-flex;
         width: 200px;
@@ -683,6 +688,9 @@ transition: fill var(--transition-dur-and-func);}
 .form-wrapper :focus + svg {
 fill: var(--accent-color);
 }
+.form-wrapper :hover + svg {
+    fill: var(--accent-color);
+    }
 .label-form {
 margin-bottom: 10px;}
 .form-subtitle {
@@ -755,6 +763,7 @@ display: none;
 }
 .input-checkbox:checked + .icon-form-checked{
     background-color: var(--accent-color);
+    border-color: var(--accent-color);
 }
 .input-checkbox:checked + .icon-form-checked .icon-form-checked-on{
     display: block;
