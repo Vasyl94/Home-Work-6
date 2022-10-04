@@ -561,7 +561,7 @@ margin-bottom: 20px;}
         border: 1px solid rgba(255, 255, 255, 0.3);
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         border-radius: 4px;
-        color: rgba(255, 255, 255, 0.6);
+        color: var(--primary-whyte-color);
         font-size: 16px;
         line-height: 1.25;
     }
@@ -569,6 +569,7 @@ margin-bottom: 20px;}
     border-color: var(--accent-color);
     outline: none;
     color: var(--primary-whyte-color);
+
     }
     .subscription-btn {
         display: inline-flex;
@@ -763,6 +764,8 @@ display: none;
 .input-checkbox:checked + .icon-form-checked{
     background-color: var(--accent-color);
     border-color: var(--accent-color);
+    background-size: contain;
+    background-origin: content-box;
 }
 .input-checkbox:checked + .icon-form-checked .icon-form-checked-on{
     display: block;
